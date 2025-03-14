@@ -37,8 +37,8 @@
 		<imagetarget id='Escanear' src='targets/parte scanear_.png'></imagetarget>
 		<imagetarget id='M2parte scanearP2' src='targets/M2_parte scanear_.png'></imagetarget>
 		<imagetarget id='EscanearArequipaV2' src='targets/DeteccionArequipaV2.jpeg'></imagetarget>
-		<imagetarget id='ICAEscaner' src='targets/DannaEscaner.png'></imagetarget>
 		<imagetarget id='ESCANEARPIURA' src='targets/RecortadoPIURA.png'></imagetarget>
+		<imagetarget id='ICACARADETECCIONV2' src='targets/ICACARADETECCION.JPG'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
@@ -77,7 +77,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/BUILDV13.loader.js"></script>
+    <script src="Build/BuildV14SinLogo.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -109,9 +109,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/BUILDV13.data.unityweb",
-                    frameworkUrl: "Build/BUILDV13.framework.js.unityweb",
-                    codeUrl: "Build/BUILDV13.wasm.unityweb",
+                    dataUrl: "Build/BuildV14SinLogo.data.unityweb",
+                    frameworkUrl: "Build/BuildV14SinLogo.framework.js.unityweb",
+                    codeUrl: "Build/BuildV14SinLogo.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "WebARTracker",
